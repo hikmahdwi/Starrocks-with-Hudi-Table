@@ -18,8 +18,8 @@ PROPERTIES
     "hive.metastore.type" = "hive",
     "hive.metastore.uris" = "thrift://host.docker.internal:9083",
     "aws.s3.use_instance_profile" = "false",
-    "aws.s3.access_key" = "minioadmin",
-    "aws.s3.secret_key" = "minioadmin",
+    "aws.s3.access_key" = SET_ACCES_KEY,
+    "aws.s3.secret_key" = SET_SECRET_KET,
     "aws.s3.enable_ssl" = "false",
     "aws.s3.enable_path_style_access" = "true",
     "aws.s3.endpoint" = "http://host.docker.internal:9000"
