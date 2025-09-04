@@ -24,9 +24,20 @@ PROPERTIES
     "aws.s3.enable_path_style_access" = "true",
     "aws.s3.endpoint" = "http://host.docker.internal:9000"
 );
-set catalog hudi_catalog_hms;
-show databases;
-use default;
-show tables;
-select * from kuponku_redemption_test_1 ;
 ```
+These commands are used to interact with the Hudi catalog in StarRocks:
+
+- `set catalog hudi_catalog_hms;`  
+  Switches the current session to use the external Hudi catalog you created.
+
+- `show databases;`  
+  Lists all available databases in the selected catalog.
+
+- `use default;`  
+  Sets the active database to "default" for subsequent operations.
+
+- `show tables;`  
+  Displays all tables within the "default" database.
+
+- `select * from kuponku_redemption_test_1;`  
+  Retrieves all data from the table named "kuponku_redemption_test_1" in the "default" database.
